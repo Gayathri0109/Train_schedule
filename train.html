@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule </title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Train Schedule </h1>
+        <form id="add-train-form">
+            <label for="train-name">Train Name:</label>
+            <input type="text" id="train-name" required>
+            <label for="arrival-time">Arrival Time:</label>
+            <input type="time" id="arrival-time" required>
+            <label for="departure-time">Departure Time:</label>
+            <input type="time" id="departure-time" required>
+            <button id="add-train-btn">Add Train</button>
+        </form>
+        <br>
+        <br>
+        <table id="train-schedule-table">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Arrival Time</th>
+                    <th>Departure Time</th>
+                </tr>
+            </thead>
+            <tbody id="train-schedule-tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="train.js"></script>
+</body>
+</html>
